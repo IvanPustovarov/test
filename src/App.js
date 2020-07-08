@@ -15,7 +15,7 @@ const App = () => {
   const GalleryComponent = data.components[0];
   const GridComponent = data.components[1];
   const ContactComponent = data.form;
-  const ButtonComponent = data.form.submit_button;
+  const ButtonComponent = data.form;
 
   return (
     <div className="app">
