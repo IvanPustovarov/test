@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import Important from "./components/Important/Important";
 import Contact from "./components/Contact/Contact";
 import ButtonSubmit from "./components/ButtonSubmit/ButtonSubmit";
+import { Layout } from "./components/Layout/Layout";
 
 const App = () => {
   //data from json
@@ -18,13 +19,21 @@ const App = () => {
   const ButtonComponent = data.form;
 
   return (
-    <div className="app">
-      <Slider data={GalleryComponent} />
-      <About data={GridComponent} />
-      <Important data={GridComponent} />
-      <Contact data={ContactComponent} />
-      <ButtonSubmit data={ButtonComponent} />
-    </div>
+    <>
+      <Layout>
+        <Slider data={GalleryComponent} />
+        <div className="row">
+          <div className="col">
+            <About data={GridComponent} />
+          </div>
+          <div className="col">
+            <Important data={GridComponent} />
+          </div>
+        </div>
+        <Contact data={ContactComponent} />
+        <ButtonSubmit data={ButtonComponent} />
+      </Layout>
+    </>
   );
 };
 
