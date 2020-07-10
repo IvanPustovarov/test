@@ -7,8 +7,8 @@ const About = (props) => {
   };
   return (
     <>
-      <h2>{data.metadata.title}</h2>
-      <p dangerouslySetInnerHTML={textWithHtml()} />
+      <h2 className="about__title">{data.metadata.title}</h2>
+      <p dangerouslySetInnerHTML={textWithHtml()} className="about__text" />
     </>
   );
 };

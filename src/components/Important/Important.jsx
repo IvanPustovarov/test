@@ -2,10 +2,12 @@ import React from "react";
 
 const Important = (props) => {
   const data = props.data.metadata.components[1];
+  const importantText = data.metadata.text;
+  const importantTitle = data.metadata.title;
   return (
     <>
-      <h2>{data.metadata.title}</h2>
-      <p>{data.metadata.text}</p>
+      <h2 className="important_title">{importantTitle}</h2>
+      <p className="important_text">{importantText}</p>
     </>
   );
 };
