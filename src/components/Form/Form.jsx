@@ -8,10 +8,16 @@ import Comment from "../InputComponents/Comment";
 import ButtonSubmit from "../ButtonSubmit/ButtonSubmit";
 const Form = (props) => {
   const data = props.data;
+<<<<<<< HEAD
   const formTitle = data.title;
   return (
     <>
       <h2 className="form__title">{formTitle}</h2>
+=======
+  return (
+    <>
+      <h2>{data.title}</h2>
+>>>>>>> ebfd5b3a88425b0230a6cfdbe7898116cc0bd1d1
       <form>
         <div className="form-row">
           <div className="col-md-4 mb-3">
