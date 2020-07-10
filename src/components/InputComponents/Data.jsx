@@ -4,7 +4,7 @@ const Data = (props) => {
   const data = props.data;
   return (
     <>
-      <label for="inlineFormInput" className="name">
+      <label htmlFor="inlineFormInput" className="name">
         Name
       </label>
       <input

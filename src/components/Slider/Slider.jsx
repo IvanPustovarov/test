@@ -24,11 +24,7 @@ const Slider = (props) => {
   return (
     <>
       <h1 className="title__images">{imagesName}</h1>
-      {imagesArray.map((elem, index) => {
-        if (index < stepImages) {
-          return <img key={index} src={`${imagesArray[index]}`} alt="" />;
-        }
-      })}
+
       <button onClick={() => nextSlide()}>next</button>
       <button onClick={() => prevSlide()}>prev</button>
     </>

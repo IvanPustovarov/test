@@ -1,16 +1,18 @@
 import React from "react";
+import "./scss/Comment.scss";
 
 const Comment = (props) => {
   const data = props.data;
   return (
     <>
-      <label for="inlineFormInput" className="name">
+      <label htmlFor="exampleFormControlTextarea1" className="name">
         Name
       </label>
-      <input
-        type="text"
-        className="form-control"
-        id="inlineFormInput"
+      <textarea
+        cols="50"
+        rows="3"
+        className="form-control textarea_custom"
+        id="exampleFormControlTextarea1"
         placeholder="Jane Doe"
       />
     </>

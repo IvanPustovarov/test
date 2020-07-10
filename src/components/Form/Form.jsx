@@ -13,10 +13,10 @@ const Form = (props) => {
       <h2>{data.title}</h2>
       <form>
         <div className="form-row">
-          <div class="col-md-4 mb-3">
+          <div className="col-md-4 mb-3">
             <Name data={data} />
           </div>
-          <div class="col-md-4 mb-3">
+          <div className="col-md-4 mb-3">
             <Phone data={data} />
           </div>
           <div className="col-md-4 mb-3">
@@ -24,10 +24,10 @@ const Form = (props) => {
           </div>
         </div>
         <div className="form-row">
-          <div class="col-md-4 mb-3">
+          <div className="col-md-4 mb-3">
             <Email data={data} />
           </div>
-          <div class="col-md-4 mb-3">
+          <div className="col-md-4 mb-3">
             <Data data={data} />
           </div>
         </div>
