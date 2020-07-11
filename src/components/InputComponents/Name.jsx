@@ -14,7 +14,7 @@ const Name = (props) => {
 
   return (
     <>
-      <label htmlFor={`${htmlForValue}`} className="name">
+      <label htmlFor={htmlForValue} className="name">
         {inputLabel}
       </label>
       <input

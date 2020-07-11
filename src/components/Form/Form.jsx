@@ -1,4 +1,5 @@
 import React from "react";
+import "./Form.scss";
 //components
 import Name from "../InputComponents/Name";
 import Phone from "../InputComponents/Phone";
@@ -13,26 +14,19 @@ const Form = (props) => {
     <>
       <h2 className="form__title">{formTitle}</h2>
       <form>
-        <div className="form-row">
-          <div className="col-md-4 mb-3">
+        <div className="row">
+          <div className="d-inline col">
             <Name data={data} />
-          </div>
-          <div className="col-md-4 mb-3">
             <Phone data={data} />
           </div>
-          <div className="col-md-4 mb-3">
+          <div className="d-inline col">
+            <Email data={data} />
+            <Data data={data} />
+          </div>
+          <div className="d-inline col">
             <Comment data={data} />
           </div>
         </div>
-        <div className="form-row">
-          <div className="col-md-4 mb-3">
-            <Email data={data} />
-          </div>
-          <div className="col-md-4 mb-3">
-            <Data data={data} />
-          </div>
-        </div>
-
         <ButtonSubmit data={data} />
       </form>
     </>

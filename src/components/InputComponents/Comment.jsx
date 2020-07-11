@@ -2,18 +2,25 @@ import React from "react";
 import "./scss/Comment.scss";
 
 const Comment = (props) => {
-  const data = props.data;
+  const data = props.data.fields[4];
+  const inputType = data.type;
+  const inputLabel = data.label;
+  const inputName = data.name;
+  const inputGroup = data.group;
+  const htmlForValue = "exampleFormControlTextarea1";
+
   return (
     <>
-      <label htmlFor="exampleFormControlTextarea1" className="name">
-        Name
+      <label htmlFor={htmlForValue} className="name">
+        {inputLabel}
       </label>
       <textarea
-        cols="50"
-        rows="3"
+        rows="4"
+        name={inputName}
+        group={inputGroup}
+        type={inputType}
         className="form-control textarea_custom"
-        id="exampleFormControlTextarea1"
-        placeholder="Jane Doe"
+        id={htmlForValue}
       />
     </>
   );
