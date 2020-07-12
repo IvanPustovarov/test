@@ -1,7 +1,12 @@
 .textarea_custom {
   resize: none;
-  height: 100%;
   border: 1px solid #c9c9c9;
   box-sizing: border-box;
   border-radius: 3px;
+}
+
+.textarea_custom:focus {
+  border-image: linear-gradient(91.83deg, #93e08c -1.93%, #78cebf 97.03%);
+  box-shadow: 0 1px 1px #93e08c inset, 0 0 8px #78cebf;
+  outline: 0 none;
 }

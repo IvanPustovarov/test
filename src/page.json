@@ -36,7 +36,7 @@
             { "name": "phone", "group": "main", "type": "tel", "label": "Телефон", "required": 1 },
             { "name": "email", "group": "main", "type": "email", "label": "E-mail", "required": 1 },
             { "name": "appointment_date", "group": "main", "type": "date", "label": "Дата записи", "required": 1 },
-            { "name": "name", "group": "additional", "type": "textarea", "label": "Комментарий"},
+            { "name": "name", "group": "additional", "type": "textarea", "label": "Комментарий (не обязательно)"},
             { "name": "agreement", "type": "checkbox", "label": "<span>Я даю согласие на обработку персональных данных согласно <a href='#'>политике конфиденциальности</a>.</span>"}
             
         ],

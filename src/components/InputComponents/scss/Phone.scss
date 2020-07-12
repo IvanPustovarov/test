@@ -1,3 +1,24 @@
-// .input__phone {
-//   background: linear-gradient(91.83deg, #93e08c -1.93%, #78cebf 97.03%);
-// }
+.input__phone:focus {
+  border: 1px solid black;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-image: linear-gradient(91.83deg, #93e08c -1.93%, #78cebf 97.03%);
+  box-shadow: 0 1px 1px #93e08c inset, 0 0 8px #78cebf;
+  outline: 0 none;
+}

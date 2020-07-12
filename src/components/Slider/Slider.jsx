@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import "./Slider.scss";
+import { ReactComponent as Dot } from "../InputComponents/scss/svg/dot.svg";
+import { ReactComponent as Next } from "../InputComponents/scss/svg/next.svg";
+import { ReactComponent as Prev } from "../InputComponents/scss/svg/prev.svg";
 
 const Slider = (props) => {
   const imagesArray = props.data.metadata.images;
@@ -24,9 +28,24 @@ const Slider = (props) => {
   return (
     <>
       <h1 className="title__images">{imagesName}</h1>
-
-      <button onClick={() => nextSlide()}>next</button>
-      <button onClick={() => prevSlide()}>prev</button>
+      <div className="row justify-content-between">
+        <div className="col custom__block"></div>
+        <div className="col custom__block"></div>
+        <div className="col custom__block"></div>
+      </div>
+      <div className="row">
+        <div className="col">
+          <Prev />
+        </div>
+        <div className="col">
+          <Dot />
+          <Dot />
+          <Dot />
+        </div>
+        <div className="col">
+          <Next />
+        </div>
+      </div>
     </>
   );
 };
