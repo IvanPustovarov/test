@@ -37,12 +37,10 @@ const Slider = (props) => {
         <div className="col">
           <Prev />
         </div>
-        <div className="col">
-          <Dot />
-          <Dot />
-          <Dot />
-        </div>
-        <div className="col">
+        <div className="dot__custom rounded-circle"></div>
+        <div className="dot__custom rounded-circle"></div>
+        <div className="dot__custom rounded-circle"></div>
+        <div className="col custom__arrow">
           <Next />
         </div>
       </div>
